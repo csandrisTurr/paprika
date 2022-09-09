@@ -2,3 +2,18 @@ body {
     background-color: papayawhip;
     color: saddlebrown;
 }
+
+#fejlec {
+    background-image: url("sok.png");
+    background-size: auto;
+}
+
+table {
+    width: 300px;
+    margin: auto;
+    border: 1px;
+}
+
+table tr:nth-child(1) {
+    width: 120px;
+}
