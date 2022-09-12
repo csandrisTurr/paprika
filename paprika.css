@@ -1,19 +1,58 @@
 body {
     background-color: papayawhip;
     color: saddlebrown;
+    width: 1000px;
+    margin: auto;
 }
 
 #fejlec {
     background-image: url("sok.png");
     background-size: auto;
+    padding: 1rem;
+}
+
+#fokeret {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+#menu {
+
+}
+
+#tartalom {
+
 }
 
 table {
     width: 300px;
     margin: auto;
-    border: 1px;
+    border-collapse: collapse;
 }
 
-table tr:nth-child(1) {
+table, th, tr, td {
+    border: 1px solid black;    
+    font-weight: bold;
+}
+
+table td:nth-child(2) {
     width: 120px;
+    text-align: center;
+}
+
+table tr:nth-child(2) td:nth-child(2) {
+    background-color: greenyellow;
+}
+
+table tr:nth-child(3) td:nth-child(2) {
+    background-color: yellow;
+}
+
+table tr:nth-child(4) td:nth-child(2) {
+    background-color: palevioletred;
+}
+
+table tr:nth-child(5) td:nth-child(2) {
+    background-color: plum; 
 }
