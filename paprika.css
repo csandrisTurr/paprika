@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+
+html, body {
+    background-image: linear-gradient(0deg, #FFC15E, #CC5803);
+    min-height: 100vh;
+}
+
 body {
-    background-color: papayawhip;
-    color: saddlebrown;
+    font-family: 'Roboto Slab', serif;
+    color: #1F1300;
     max-width: 1000px;
     margin: auto;
 }
 
 #fejlec {
+    border-bottom: #F7934C .25rem solid;
     background-image: url("sok.png");
-    background-size: auto;
+    background-size: cover;
     padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    color: black;
+}
+
+#fejlec h1 {
+    font-weight: 800;
 }
 
 #fokeret {
@@ -16,6 +30,20 @@ body {
     flex-direction: row;
     gap: 3rem;
     padding: 10px;
+}
+
+#tartalom {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #F7B05B;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+
+#menu {
+    background-color: #F7B05B;
+    padding: 1rem;
+    border-radius: 1rem;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 }
 
 @media screen and (max-width: 1000px) {
@@ -37,20 +65,30 @@ body {
     }
 } 
 
-
 #menu ul li {
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
     list-style-image: url("papr.png");
-    background-color: white;
-    border: 1px solid cadetblue;
+    /*background-color: /*#335C67;;*/
+    /*background-image: linear-gradient(45deg, #FFF, #000);*/
+    /* border: 1px solid cadetblue; */
+    background-color: #F7934C;
+    border-radius: 1rem;
     padding: 10px;
     font-weight: bold;
     width: 200px;
     margin-bottom: 10px;
 }
 
+#menu ul li a::before {
+    content: "";
+    height: max-content;
+    width: 1rem;
+    background-color: #FFF;
+}
+
 #menu ul li a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
 
 table {
