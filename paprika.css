@@ -21,6 +21,12 @@ body {
     color: black;
 }
 
+h2 {
+    display: inline-block;
+    box-sizing: content-box;
+    border-bottom: #CC5803 .5rem dashed;
+}
+
 #fejlec h1 {
     font-weight: 800;
 }
@@ -33,6 +39,8 @@ body {
 }
 
 #tartalom {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     border-radius: 1rem;
     background-color: #F7B05B;
@@ -92,13 +100,14 @@ body {
 }
 
 table {
+    border: #CC5803 .4rem solid !important;
     width: 300px;
     margin: 20px auto auto auto;
     border-collapse: collapse;
 }
 
 table, th, tr, td {
-    border: 1px solid black;    
+    border: #F7934C .2rem dashed;
     font-weight: bold;
     padding: 5px;
 }
